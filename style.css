@@ -1,0 +1,60 @@
+@font-face {
+      font-family: Circular;
+      src: url(CircularStd-Bold.otf);
+  }
+
+  h1, p, ul
+  {
+    font-family:Circular;
+  }
+
+  h1
+  {
+    margin-bottom:40px;
+  }
+
+  p{
+    margin-bottom:20px;
+  }
+
+  ul{
+    margin-left:40px;
+    margin-right:40px;
+  }
+
+li{
+  margin-bottom:20px;
+}
+
+  body
+  {
+    margin:5% 17.5% 5% 17.5%;
+    background-color:rgba(255, 255, 255, 0.85);
+    color:black;
+    padding:25px;
+    border-radius:2px;
+    position:relative;
+    font-size:18px;
+    padding-bottom:80px;
+  }
+
+  *
+  {
+    padding:0px;
+    margin:0px;
+  }
+
+  html {
+  background: url(comp.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logo
+{
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
