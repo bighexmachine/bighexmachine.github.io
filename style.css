@@ -26,6 +26,11 @@ li{
   margin-bottom:20px;
 }
 
+a, a:visited
+{
+  color:white;
+}
+
   body
   {
     margin:5% 17.5% 5% 17.5%;
@@ -35,7 +40,7 @@ li{
     border-radius:2px;
     position:relative;
     font-size:18px;
-    padding-bottom:80px;
+    padding-bottom:100px;
   }
 
   *
