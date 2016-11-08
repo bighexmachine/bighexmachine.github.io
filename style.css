@@ -26,9 +26,9 @@ li{
   margin-bottom:20px;
 }
 
-a, a:visited
+a, a:visited, a:hover
 {
-  color:white;
+  color:purple;
 }
 
   body
