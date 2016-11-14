@@ -41,6 +41,7 @@ a, a:visited, a:hover
     position:relative;
     font-size:18px;
     padding-bottom:100px;
+    min-width:480px;
   }
 
   *
