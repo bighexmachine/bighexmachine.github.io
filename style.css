@@ -3,7 +3,7 @@
       src: url(CircularStd-Bold.otf);
   }
 
-  h1, p, ul
+  h1, p, ul, figcaption
   {
     font-family:Circular;
   }
@@ -63,4 +63,19 @@ a, a:visited, a:hover
   position:absolute;
   bottom:20px;
   right:20px;
+}
+
+figcaption
+{
+  margin-top:5px;
+  margin-bottom:30px;
+  text-align: center;
+}
+
+.postimage
+{
+  width:75%;
+  border:5px solid white;
+  margin:20px auto 0px auto;
+  display:block;
 }
