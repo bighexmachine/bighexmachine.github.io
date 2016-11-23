@@ -16,7 +16,7 @@
 
 <p>In the Computer Science Department at Bristol University we’ve been working on a really cool project to demystify the seemingly magical mechanisms of computation: the Big Hex Machine.</p>
 
-<p>The machine is a giant 16-bit Computer, designed to show how binary information flows through simple, connected components to execute programs. Built from from over 100 4-bit 'hex' modules - and measuring over eight square meters - it’s a colossus. Along with the processor it has its own display, input and output ports (for things like buttons) and a complete toolchain for writing and running programs.</p>
+<p>The machine is a giant 16-bit Computer, designed to show how binary information flows through simple components to execute programs. Built from from over 100 4-bit 'hex' modules - and measuring over eight square meters - it’s a colossus. Along with the processor it has its own display, input and output ports (for things like buttons) and a complete toolchain for writing and running programs.</p>
 
 <iframe src="https://www.youtube.com/embed/sQM2s8UJJQw" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style = "border:5px solid white; width:470px;height:320px; margin: 20px auto 30px auto; display:block"></iframe>
 
@@ -61,15 +61,13 @@
 <p>So the next stage of the project was to set the Pi up as a wireless hotspot. After some minor tweaking we got the hotspot up and running pretty quickly, and much to our delight at that point the Raspberry Pi 3 turned up - so we ditched the USB wifi dongle along with the trailing cables too!</p>
 
 
-<p>And everything was nearly complete. The final piece of the puzzle was a user interface to control the machine. This came in the form of a simple web application to control the machine via the hotspot + web server. As we had already built a simple RESTful interface on top of the web server, it was really easy to send commands to it via a barebones app using HTML5, JQuery and bootstrap.</p>
+<p>And everything was nearly complete. The final piece of the puzzle was a user interface to control the machine. This came in the form of a simple web application to control the machine via the hotspot + web server. As we had already built a simple RESTful interface on top of the web server, it was really easy to send commands to it via a barebones app using HTML5, JQuery and bootstrap. Using bootstrap meant the app is responsive too, so it is easy to write programs if you’re using a laptop, or impressive enough to control the machine from mobile devices.</p>
 
 <figure>
 <img src = "pi/app.jpg" class ="postimage">
 <figcaption>The Big Hex Machine Web App</figcaption>
 </figure>
 
-
-<p>The app is responsive too, so it is easy to write programs if you’re using a laptop, or impressive enough to control the machine from mobile devices. Oh, and it’s all open source, so can be viewed from the git repo <a href = "https://github.com/uobteachingtechnologist/wallcomp-interface">here</a>.</p>
 
 <p>As an final exercise we removed the i2c board and connected the machine directly to the Pi's GPIO pins via a custom driver board. This board was needed to mitigate the different voltage levels between the GPIO pins and hex modules, and to isolate the circuits to make sure we weren't going to accidently fry the Pi. Connecting the Pi directly to the computer also meant we could run it at higher speeds (the i2c protocol wastes a lot of clock cycles). To turbo boost the clock we also built a clever <a href = "https://github.com/bighexmachine/NodeCPP">NodeJS / C++ GPIO wrapper</a> to toggle the pins as quickly as possible (thanks Sam!). It now runs at up to 80kHz - which is fast enough to do lots of cool stuff.</p>
 
