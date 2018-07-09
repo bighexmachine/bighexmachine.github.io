@@ -3,7 +3,7 @@
       src: url(CircularStd-Bold.otf);
   }
 
-  h1, p, ul, figcaption
+  h1,h2,h3,h4, p, ul, figcaption
   {
     font-family:Circular;
   }
@@ -78,4 +78,12 @@ figcaption
   border:5px solid white;
   margin:20px auto 0px auto;
   display:block;
+}
+
+pre
+{
+  background-color: #666;
+  border-radius: 3px;
+  padding: 3px 3px 3px 10px;
+  margin-bottom: 2px;
 }
