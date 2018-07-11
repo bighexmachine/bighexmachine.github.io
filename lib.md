@@ -35,6 +35,11 @@ proc memcpy(src, dst, size);
 Copies `size` values from the `src` array to the `dst` array
 
 ```x
+proc memzero(src, size);
+```
+Sets `size` elements in the `src` array to 0
+
+```x
 func mul(x,y);
 ```
 Returns the result of `x * y`
